@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include<conio.h>
+
+int add(int arr[],int n)
+{
+if(n<=0)
+  return 0;
+return (add(arr,n-1) + arr[n-n]);
+ }
+   int main()
+   {
+    int arr[]={2,3,4,5,6};
+    clrscr();
+     int n = sizeof(arr) / sizeof(arr[0]);
+	 //int n = sizeof(arr) / sizeof(arr[0]);
+    printf("sum of given array:%d", add(arr,n));
+     getch();
+     }

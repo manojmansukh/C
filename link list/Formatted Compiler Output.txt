@@ -1,0 +1,2 @@
+C:\Users\mayur\Documents\data structure\inser.cpp	In function 'void beginsert(int)':
+27	11	C:\Users\mayur\Documents\data structure\inser.cpp	[Error] 'null' was not declared in this scope

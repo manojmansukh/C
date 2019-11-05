@@ -1,0 +1,62 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+	int i,j,sum,k,r1,c1,r2,c2,a[20][20],b[20][20],mul[20][20];
+	clrscr();
+	printf("enter the no of rows & columns:");
+	scanf("%d%d",&r1,&c1);
+	r2=r1;
+	c2=c1;
+
+	printf("enter the valu for Matrix 1:");
+	 for(i=0;i<r1;i++)
+     for(j=0;j<c1;j++)
+     scanf("%d",&a[i][j]);
+
+	printf("enter the valu for Matrix 2:");
+	 for(i=0;i<r2;i++)
+     for(j=0;j<c2;j++)
+     scanf("%d",&b[i][j]);
+
+	printf("Matrix 1:\n");
+	for(i=0;i<r1;i++)
+	{
+		 for(j=0;j<c1;j++)
+	    {
+		 printf("%d\t",a[i][j]);
+		}printf("\n");
+	}
+
+	printf("Matrix 2:\n");
+	for(i=0;i<r2;i++)
+	{
+		 for(j=0;j<c2;j++)
+	    {
+		 printf("%d\t",b[i][j]);
+		}printf("\n");
+	}
+
+	for(i=0;i<r1;i++)
+	{
+	  for(j=0;j<c2;j++)
+	   {  sum=0;
+	     for(k=0;k<r1;k++)
+	     {
+	       sum=sum+a[i][k]*b[k][j];
+	      }
+	      mul[i][j]=sum;
+	      }
+	   }
+
+	  printf("Multiplication:\n");
+	for(i=0;i<r1;i++)
+	{
+		 for(j=0;j<c2;j++)
+	    {
+		 printf("%d\t",mul[i][j]);
+		}printf("\n");
+	}
+	getch();
+}

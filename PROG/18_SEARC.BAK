@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+
+ int reverse(int arr[],int n)
+ {
+ int i,no,low=0,high=n-1,mid=(low+high)/2;
+
+printf("array element:\t");
+for(i=0;i<n;i++)
+ printf("%d\t",arr[i]);
+ printf("enter the element for searvch:");
+ scanf("%d",&no);
+
+ }
+int main()
+{
+int arr[]={1,2,3,4,5,6,7,8,9};
+clrscr();
+
+int n=sizeof(arr)/sizeof(arr[0]);
+reverse(arr,n);
+getch();
+}

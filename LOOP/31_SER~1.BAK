@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int n,i,sum,no,last_no;
+	printf("armstrong no from 1 to :");
+	scanf("%d",&no);
+	for(i=1;i<=no;i++)
+	{	sum=0;
+		n=i;
+		sum=sum+(i*i*i);
+		if(n==sum)
+		printf("%d are armstrong no.",n);
+			
+	}
+
+}
+

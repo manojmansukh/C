@@ -1,0 +1,42 @@
+#include<stdio.h>
+#include<stdlib.h>  
+#include<conio.h>
+void beginsert(int);
+struct node
+{
+	int data;
+	struct node * next;
+};
+struct node *head;
+
+int main()
+{
+	int no,i,ch;
+	do
+	{
+		printf("enter the no which you want to insert:");
+		scanf("%d",&no);
+		beginsert(no);  
+		printf("if ypu want to insert element (press 0):");
+		scanf("%d",&ch);
+	}while(ch==0);
+}
+	void beginsert(int no)
+	{
+		struct node *ptr=(struct node*)malloc(sizeof(struct node*));
+		if(ptr==null)
+		{
+			printf("overflow");
+		}
+		else
+		{
+			ptr->data=no;
+			ptr->next=head;
+			head=ptr;
+			printf("\n node inserted");
+		}	
+	}
+	
+
+	
+
